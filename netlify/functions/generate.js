@@ -7,7 +7,7 @@ export async function handler(event) {
   try {
     const { model, prompt, aspectRatio } = JSON.parse(event.body || '{}')
     
-    const token = process.env.REPLICATE_API_TOKEN
+    const token = "r8_VgZelPRMcqUwPZpjN01RM7WvfDAWb563xIspS"
     if (!token) {
       return { statusCode: 500, body: JSON.stringify({ error: 'Missing REPLICATE_API_TOKEN in Netlify Environment Variables. Add it at: Site configuration > Environment variables' }) }
     }
