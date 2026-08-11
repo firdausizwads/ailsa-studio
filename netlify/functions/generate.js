@@ -4,7 +4,7 @@
 
 // Free public sample MP4s (Google's public test bucket) — CORS-friendly, no key needed.
 const SAMPLE_VIDEOS = [
-  "https://commondatorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
   "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
   "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
   "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
