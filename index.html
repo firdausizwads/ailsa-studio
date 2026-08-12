@@ -11,7 +11,6 @@
 body{font-family:'Inter',sans-serif;background:var(--bg);color:#fff;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit}
-
 /* NAV */
 nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
 .nav-inner{max-width:1360px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
@@ -25,7 +24,6 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.85);backdrop-fil
 .cta{background:#fff;color:#000;padding:9px 18px;border-radius:99px;font-weight:700;font-size:13px}
 .cta:hover{background:var(--lime)}
 .mobile-menu{display:none}
-
 /* HERO */
 .hero{max-width:1360px;margin:0 auto;padding:42px 20px 10px;text-align:center}
 .hero h1{font-size:clamp(32px,6vw,64px);font-weight:900;letter-spacing:-0.05em;line-height:0.95}
@@ -49,7 +47,6 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.85);backdrop-fil
 .avatars{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;align-items:center}
 .avatars img{width:36px;height:36px;border-radius:99px;border:2px solid var(--border);object-fit:cover}
 .avatars span{font-size:13px;color:#e4e4e7;font-weight:600}
-
 /* TOOLS INTRO */
 .section{max-width:1360px;margin:0 auto;padding:28px 20px}
 .section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:14px}
@@ -76,7 +73,6 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.85);backdrop-fil
 .tag-new{background:var(--lime);color:#000}
 .tag-hot{background:#ff3b30;color:#fff}
 .tag-trend{background:var(--purple);color:#fff}
-
 /* MARKETING STUDIO */
 .marketing{background:#fff;color:#000;border-radius:28px;margin:18px auto;max-width:1360px;padding:22px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:18px;overflow:hidden}
 .marketing h2{font-size:30px;font-weight:900;letter-spacing:-0.04em;line-height:0.95}
@@ -91,7 +87,6 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.85);backdrop-fil
 .feat div{padding:12px}
 .feat h4{font-size:12.5px;font-weight:800}
 .feat p{font-size:11.5px;color:var(--muted);margin-top:2px}
-
 /* STUDIO */
 .studio{max-width:1360px;margin:0 auto;padding:18px 20px}
 .studio-wrap{background:#111;border:1px solid var(--border);border-radius:24px;overflow:hidden;display:grid;grid-template-columns:280px 1fr;min-height:640px}
@@ -138,7 +133,6 @@ textarea{resize:vertical;min-height:92px}
 .msg.bot{align-self:flex-start;background:#1f1f1f;color:#e4e4e7;border-bottom-left-radius:6px;border:1px solid #2a2a2a}
 .model-select{margin-bottom:12px}
 .kbd{font-family:'JetBrains Mono',monospace;font-size:10px;background:#1f1f1f;border:1px solid #2a2a2a;padding:2px 6px;border-radius:6px;color:#a1a1aa}
-
 /* PRICING */
 .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
 .price-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px}
@@ -151,7 +145,6 @@ textarea{resize:vertical;min-height:92px}
 .ul li{font-size:13px;display:flex;gap:8px;align-items:center}
 .ul li::before{content:"✓";width:20px;height:20px;display:grid;place-items:center;background:#1f1f1f;color:var(--lime);border-radius:99px;font-size:11px;font-weight:900;flex-shrink:0}
 .price-card.featured .ul li::before{background:#000;color:var(--lime)}
-
 /* FOOTER */
 footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;color:#71717a;font-size:12px}
 .footer-inner{max-width:1360px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
@@ -189,7 +182,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
     </div>
   </div>
 </nav>
-
 <section class="hero">
   <h1>What will you <em>create?</em></h1>
   <p>Create stunning AI videos for YouTube Shorts, UGC, AI Ads, and more. Every AI tool you need — in one studio.</p>
@@ -197,7 +189,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
     <button class="btn-primary" onclick="document.getElementById('studio').scrollIntoView({behavior:'smooth'})">Start Creating for Free →</button>
     <button class="btn-ghost" onclick="document.getElementById('studio').scrollIntoView({behavior:'smooth'})">Explore Models</button>
   </div>
-
   <div class="carousel">
     <div class="car-card" onclick="openTool('t2v')">
       <img src="https://images.unsplash.com/photo-1611162616805-3af6e0c5c58e?w=500&q=80" alt="" onerror="this.src='https://picsum.photos/500/340?random=10'">
@@ -216,7 +207,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
       <div class="car-label"><span>AI Ads</span><h3>Product Ads</h3><button>Try now →</button></div>
     </div>
   </div>
-
   <div class="trusted">
     <p>Trusted by creators with millions of views</p>
     <div class="avatars">
@@ -229,7 +219,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
     </div>
   </div>
 </section>
-
 <section class="section">
   <div class="section-head">
     <h2>Every AI tool you need,<br>in one place.</h2>
@@ -257,7 +246,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
       <div class="tool-foot"><span>Add Captions →</span><small style="color:#71717a;font-weight:700;font-size:11px">9 languages</small></div>
     </div>
   </div>
-
   <div class="models-grid" id="models">
     <div class="model-card" onclick="openTool('image')"><span class="tag tag-trend">Image</span><div class="top"><div class="logo-sm" style="background:#fef3c7">🍌</div><h4>Nano Banana Pro</h4></div><p>Generate Realistic Images — Google's best image model</p></div>
     <div class="model-card" onclick="openTool('t2v')"><span class="tag tag-new">Video</span><div class="top"><div class="logo-sm" style="background:#dbeafe;color:#1d4ed8">S</div><h4>Seedance 2.0</h4></div><p>Create high quality videos from images — ByteDance</p></div>
@@ -267,7 +255,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
     <div class="model-card" onclick="openTool('marketing')"><div class="top"><div class="logo-sm" style="background:var(--lime);color:#000">▣</div><h4>Marketing Studio</h4></div><p>Create high-converting marketing videos</p></div>
   </div>
 </section>
-
 <section class="section" style="padding-top:6px">
   <div class="marketing">
     <div>
@@ -284,15 +271,14 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
       <div><img src="https://images.unsplash.com/photo-1483985584125-54e23bdfa6f3?w=400&q=80"><span class="pill">AI Ads • Variant</span></div>
     </div>
   </div>
-
   <div class="feature-grid">
     <div class="feat" onclick="openTool('script')"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&q=80"><div><h4>AI Story Video</h4><p>Turn script into story video</p></div></div>
     <div class="feat" onclick="openTool('script')"><img src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=400&q=80"><div><h4>Story Template</h4><p>Proven viral structures</p></div></div>
     <div class="feat" onclick="openTool('script')"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80"><div><h4>Video Ideation</h4><p>Generate viral ideas</p></div></div>
-    <div class="feat" onclick="openTool('script')"><img src="https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?w=400&q=80"><div><h4>Scriptwriter</h4><p>AI script from link or idea</p></div></div>
+    <div class="feat" onclick="openTool('script')"><img src="https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?w=400&q=80"><div><h4>AI Scriptwriter</h4><p>Script from link or idea</p></div></div>
     <div class="feat" onclick="openTool('marketing')"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80"><div><h4>AI Ad Cloner</h4><p>Clone any ad in seconds</p></div></div>
     <div class="feat" onclick="openTool('marketing')"><img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&q=80"><div><h4>AI Ad Template</h4><p>Ready-to-use templates</p></div></div>
-    <div class="feat" onclick="openTool('voice')"><img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=400&q=80"><div><h4>AI Clone</h4><p>Clone voice & face</p></div></div>
+    <div class="feat" onclick="openTool('voice')"><img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=400&q=80"><div><h4>AI Voice Clone</h4><p>Clone voice & face</p></div></div>
     <div class="feat" onclick="openTool('voice')"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80"><div><h4>AI Voiceover</h4><p>Natural voices • 9 langs</p></div></div>
     <div class="feat" onclick="openTool('captions')"><img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&q=80"><div><h4>Auto Captions</h4><p>Trending caption styles</p></div></div>
     <div class="feat" onclick="openTool('voice')"><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&q=80"><div><h4>Voice Changer</h4><p>Change voice instantly</p></div></div>
@@ -300,7 +286,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
     <div class="feat" onclick="openTool('t2v')"><img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&q=80" onerror="this.src='https://picsum.photos/400/300?random=2'"><div><h4>Video Downloader</h4><p>Clean downloads</p></div></div>
   </div>
 </section>
-
 <!-- STUDIO WORKSPACE -->
 <section class="studio" id="studio">
   <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
@@ -310,7 +295,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
     </div>
     <div style="display:flex;gap:8px"><span class="kbd">Kling 3.0 Turbo READY</span><span class="kbd">Seedance 2.0 READY</span><span class="kbd">Veo 3.1 READY</span></div>
   </div>
-
   <div class="studio-wrap">
     <div class="sidebar">
       <div class="side-title">Generate</div>
@@ -324,7 +308,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
       <button class="side-btn" data-tool="captions" onclick="openTool('captions')"><i>❝</i> Auto Captions</button>
       <button class="side-btn" data-tool="marketing" onclick="openTool('marketing')"><i>◈</i> Marketing / Ad Cloner</button>
     </div>
-
     <div class="studio-main">
       <!-- TEXT TO VIDEO -->
       <div class="panel active" id="panel-t2v">
@@ -346,7 +329,7 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
             <label class="label" style="margin-top:12px">Aspect Ratio</label>
             <div class="ratio"><button class="active" onclick="selectRatio(this)">9:16</button><button onclick="selectRatio(this)">16:9</button><button onclick="selectRatio(this)">1:1</button></div>
             <button class="gen-btn" onclick="generateVideo('t2v')">▶ Generate with <span id="t2v-model-label">Kling 3.0 Turbo</span></button>
-            <p style="font-size:11px;color:#71717a;text-align:center;margin-top:8px">Demo mode — wire Replicate / Fal.ai / Kling API to go live. See .env.example</p>
+            <p style="font-size:11px;color:#71717a;text-align:center;margin-top:8px">Live via fal.ai — video takes ~20–60s to generate</p>
           </div>
           <div class="preview" id="preview-t2v">
             <div class="preview-head"><span>Preview</span><span style="color:#71717a">No watermark • Ready to post</span></div>
@@ -361,7 +344,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
           </div>
         </div>
       </div>
-
       <!-- IMAGE TO VIDEO -->
       <div class="panel" id="panel-i2v">
         <h3>Image to Video</h3>
@@ -387,7 +369,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
           </div>
         </div>
       </div>
-
       <!-- TEXT TO IMAGE -->
       <div class="panel" id="panel-image">
         <h3>Text to Image</h3>
@@ -409,7 +390,7 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
           <div class="preview">
             <div class="preview-head"><span>Result</span><button onclick="downloadImage()" style="background:#1f1f1f;color:#fff;border:1px solid #2a2a2a;padding:6px 10px;border-radius:99px;font-size:11px;font-weight:700;cursor:pointer">Download • Upscale 4K</button></div>
             <div class="preview-body" id="img-result">
-              <div id="img-placeholder"><div style="font-size:42px">✦</div><p class="empty">Your image will appear here.<br>In demo mode we render with Unsplash + your prompt as overlay.</p></div>
+              <div id="img-placeholder"><div style="font-size:42px">✦</div><p class="empty">Your image will appear here.<br>Rendered free via Pollinations.</p></div>
               <img id="img-out" class="out-img" style="display:none">
               <div class="progress" style="display:none;width:100%;max-width:320px" id="prog-img"><i id="bar-img"></i></div>
               <p id="status-img" style="font-size:12px;color:#a1a1aa;margin-top:8px"></p>
@@ -417,7 +398,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
           </div>
         </div>
       </div>
-
       <!-- CHAT STUDIO -->
       <div class="panel" id="panel-chat">
         <h3>AI Chat Studio</h3>
@@ -430,7 +410,7 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
           <div class="preview" style="min-height:420px">
             <div class="preview-head"><span id="chat-model-label">Claude 4 Sonnet</span><span style="cursor:pointer" onclick="clearChat()">Clear</span></div>
             <div class="chat-box" id="chat-box">
-              <div class="msg bot">Hi — I'm AiLSA Chat. Pick a model above and ask anything. Try: <br><br><b>“Write a viral TikTok script for a fitness app and generate a video with Kling 3.0”</b><br>or <b>“Create an ad for a coffee brand in Bahasa Melayu”</b></div>
+              <div class="msg bot">Hi — I'm AiLSA Chat. Pick a model above and ask anything. Try: <br><br><b>"Write a viral TikTok script for a fitness app and generate a video with Kling 3.0"</b><br>or <b>"Create an ad for a coffee brand in Bahasa Melayu"</b></div>
             </div>
             <div style="padding:10px;border-top:1px solid var(--border);display:flex;gap:8px">
               <input id="chat-input" placeholder="Ask Claude / Gemini / ChatGPT... (Enter to send)" onkeydown="if(event.key==='Enter')sendChat()">
@@ -439,7 +419,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
           </div>
         </div>
       </div>
-
       <!-- SCRIPTWRITER -->
       <div class="panel" id="panel-script">
         <h3>Scriptwriter & Ideation</h3>
@@ -456,15 +435,18 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
             <div class="preview-head"><span>Script Output</span><button onclick="copyScript()" style="background:#1f1f1f;color:#fff;border:1px solid #2a2a2a;padding:6px 10px;border-radius:99px;font-size:11px;font-weight:700;cursor:pointer">Copy</button></div>
             <div class="preview-body" style="text-align:left;align-items:start">
               <pre id="script-out" style="white-space:pre-wrap;font-family:Inter,sans-serif;font-size:13px;line-height:1.6;color:#e4e4e7">Your script will appear here.
+
 — Hook (0-3s)
+
 — Body (4-25s)
+
 — CTA (26-30s)
+
 + Shot list + voiceover lines</pre>
             </div>
           </div>
         </div>
       </div>
-
       <!-- VOICE -->
       <div class="panel" id="panel-voice">
         <h3>AI Voiceover & Lip Sync</h3>
@@ -493,7 +475,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
           </div>
         </div>
       </div>
-
       <!-- CAPTIONS -->
       <div class="panel" id="panel-captions">
         <h3>Auto Captions</h3>
@@ -521,7 +502,6 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
           </div>
         </div>
       </div>
-
       <!-- MARKETING -->
       <div class="panel" id="panel-marketing">
         <h3>Marketing Studio & Ad Cloner</h3>
@@ -538,8 +518,8 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
             <div class="preview-head"><span>Ad Variants</span><span>Hook generator</span></div>
             <div class="preview-body" style="text-align:left;align-items:start">
               <div id="ad-out" style="width:100%;display:flex;flex-direction:column;gap:10px">
-                <div style="background:#171717;border:1px solid #2a2a2a;border-radius:12px;padding:12px"><b style="font-size:12px;color:var(--lime)">HOOK 1 • Question</b><p style="font-size:13px;margin-top:4px">“Why does your 3pm coffee make you MORE tired?”</p></div>
-                <div style="background:#171717;border:1px solid #2a2a2a;border-radius:12px;padding:12px"><b style="font-size:12px;color:var(--lime)">HOOK 2 • UGC</b><p style="font-size:13px;margin-top:4px">“I replaced coffee with this for 14 days — here’s what happened.”</p></div>
+                <div style="background:#171717;border:1px solid #2a2a2a;border-radius:12px;padding:12px"><b style="font-size:12px;color:var(--lime)">HOOK 1 • Question</b><p style="font-size:13px;margin-top:4px">"Why does your 3pm coffee make you MORE tired?"</p></div>
+                <div style="background:#171717;border:1px solid #2a2a2a;border-radius:12px;padding:12px"><b style="font-size:12px;color:var(--lime)">HOOK 2 • UGC</b><p style="font-size:13px;margin-top:4px">"I replaced coffee with this for 14 days — here's what happened."</p></div>
                 <div style="background:#171717;border:1px solid #2a2a2a;border-radius:12px;padding:12px"><b style="font-size:12px;color:var(--lime)">HOOK 3 • Product Try-On</b><p style="font-size:13px;margin-top:4px">AI model holding your product in kitchen, morning routine, natural light.</p></div>
                 <p style="font-size:11px;color:#71717a">Click Generate to create new hooks for your product.</p>
               </div>
@@ -547,10 +527,8 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
           </div>
         </div>
       </div>
-
     </div>
   </div>
-
   <!-- ENV HELP -->
   <div style="margin-top:14px;background:#171717;border:1px solid var(--border);border-radius:16px;padding:16px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:16px">
     <div>
@@ -574,14 +552,13 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
       OPENAI_API_KEY=sk-proj-...<br>
       ELEVENLABS_API_KEY=...<br>
       <br>
-      <div style="color:var(--lime)">// lib/generate.js — replace mock</div>
-      const res = await fetch('/api/generate', {<br>
+      <div style="color:var(--lime)">// netlify/functions/generate.js — live via fal.ai</div>
+      const res = await fetch('/.netlify/functions/generate', {<br>
       &nbsp;&nbsp;method:'POST', body:JSON.stringify({model,prompt})<br>
       })
     </div>
   </div>
 </section>
-
 <section class="section" id="pricing">
   <div class="section-head">
     <h2>Simple pricing —<br>AiLSA Studio</h2>
@@ -627,14 +604,12 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
     </div>
   </div>
 </section>
-
 <footer>
   <div class="footer-inner">
     <div><b style="color:#fff">AiLSA Studio</b> — 1:1 copy of ViewMax.io, rebuilt for you. Not affiliated with viewmax.io.<br><span style="font-size:11px">© 2026 AiLSA Studio • Built in Kota Kinabalu • All models via their official APIs.</span></div>
     <div style="text-align:right"><a href="#studio" style="color:#fff;font-weight:700">Start Creating →</a><br><span>Docs • API • Support • Terms</span></div>
   </div>
 </footer>
-
 <script>
 function openTool(id){
   document.querySelectorAll('.side-btn').forEach(b=>b.classList.toggle('active', b.dataset.tool===id));
@@ -649,7 +624,9 @@ function selectRatio(btn){
 }
 function setPrompt(id, text){ document.getElementById(id).value=text; }
 
-// VIDEO - REAL via Netlify Function with mock fallback
+// ============================================================
+// VIDEO — live via Netlify Functions (fal.ai) with polling
+// ============================================================
 async function generateVideo(which){
   const prog=document.getElementById('prog-'+which);
   const bar=document.getElementById('bar-'+which);
@@ -657,75 +634,96 @@ async function generateVideo(which){
   const isT2V = which==='t2v';
   const model = isT2V ? document.getElementById('t2v-model').value : 'Seedance 2.0';
   const prompt = isT2V ? document.getElementById('t2v-prompt').value : document.getElementById('i2v-prompt').value;
+
   prog.style.display='block';
   bar.style.width='20%';
   status.textContent='Queued • Calling '+model+'...';
-  // Try real API first
+
+  // shared helper that renders the video player
+  const showVideo = (url, label) => {
+    const wrap = isT2V ? document.getElementById('preview-t2v-body') : document.querySelector('#panel-i2v .preview-body');
+    const existing = wrap.querySelector('.mock-video');
+    if(existing) existing.remove();
+    const ph = wrap.querySelector('#i2v-placeholder');
+    if(ph) ph.style.display='none';
+    if(isT2V){ const ew=document.querySelector('#preview-t2v-body > div'); if(ew) ew.style.display='none'; }
+    const mock=document.createElement('div');
+    mock.className='mock-video';
+    mock.style.cssText='width:100%;max-width:320px;background:#000;border:1px solid #2a2a2a;border-radius:16px;overflow:hidden;text-align:left';
+    mock.innerHTML='<video src="'+url+'" controls autoplay loop muted style="width:100%;height:180px;object-fit:cover;background:#000"></video><div style="padding:10px"><div style="font-size:11px;color:var(--lime);font-weight:800">'+label+'</div><div style="font-size:12px;color:#e4e4e7;margin-top:4px">'+prompt.slice(0,80)+'...</div><div style="display:flex;gap:8px;margin-top:10px"><a href="'+url+'" download target="_blank" style="flex:1;background:#fff;color:#000;border:none;padding:8px;border-radius:99px;font-weight:800;font-size:12px;cursor:pointer;text-align:center;text-decoration:none">Download MP4</a></div></div>';
+    wrap.appendChild(mock);
+  };
+
   try{
     const res=await fetch('/.netlify/functions/generate',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body: JSON.stringify({ model, prompt, aspectRatio:'9:16' })
     });
+
     const data=await res.json();
-    if(res.ok && data.url){
+
+    // 1) instant success (or an image path)
+    if(data.status==='succeeded' && data.url){
       bar.style.width='100%';
-      status.textContent='Done ✓ REAL video URL received!';
+      status.textContent='Done ✓ REAL video received!';
       prog.style.display='none'; bar.style.width='0%';
-      const wrap = isT2V ? document.getElementById('preview-t2v-body') : document.querySelector('#panel-i2v .preview-body');
-      const existing = wrap.querySelector('.mock-video');
-      if(existing) existing.remove();
-      const ph = wrap.querySelector('#i2v-placeholder');
-      if(ph) ph.style.display='none';
-      if(isT2V){ const ew=document.querySelector('#preview-t2v-body > div'); if(ew) ew.style.display='none'; }
-      const mock=document.createElement('div');
-      mock.className='mock-video';
-      mock.style.cssText='width:100%;max-width:320px;background:#000;border:1px solid #2a2a2a;border-radius:16px;overflow:hidden;text-align:left';
-      mock.innerHTML=`<video src="${data.url}" controls autoplay loop muted style="width:100%;height:180px;object-fit:cover;background:#000"></video><div style="padding:10px"><div style="font-size:11px;color:var(--lime);font-weight:800">REAL • ${model}</div><div style="font-size:12px;color:#e4e4e7;margin-top:4px">${prompt.slice(0,80)}...</div><div style="display:flex;gap:8px;margin-top:10px"><a href="${data.url}" download target="_blank" style="flex:1;background:#fff;color:#000;border:none;padding:8px;border-radius:99px;font-weight:800;font-size:12px;cursor:pointer;text-align:center;text-decoration:none">Download MP4</a></div></div>`;
-      wrap.appendChild(mock);
+      showVideo(data.url, 'REAL • '+model);
       return;
-    } else if(data.error && data.error.includes('Missing REPLICATE_API_TOKEN')){
-      throw new Error('missing_token');
     }
+
+    // 2) generation errored -> show sample so player still works
+    if(data.status==='error'){
+      prog.style.display='none'; bar.style.width='0%';
+      status.textContent='Generation failed — showing sample';
+      showVideo(data.fallbackUrl, 'SAMPLE • '+model);
+      return;
+    }
+
+    // 3) video job submitted -> poll until done (20–60s)
+    status.textContent='Generating video… (20–60s)';
+    const pollUrl=data.pollUrl;
+    const fallbackUrl=data.fallbackUrl;
+
+    const poll=async()=>{
+      try{
+        const r=await fetch(pollUrl).then(r=>r.json());
+        if(r.status==='succeeded'){
+          bar.style.width='100%';
+          status.textContent='Done ✓ REAL video generated!';
+          prog.style.display='none'; bar.style.width='0%';
+          showVideo(r.url, 'REAL • '+model);
+        }else if(r.status==='failed'){
+          prog.style.display='none'; bar.style.width='0%';
+          status.textContent='Generation failed — showing sample';
+          showVideo(fallbackUrl, 'SAMPLE • '+model);
+        }else{
+          setTimeout(poll,3000);
+        }
+      }catch(err){
+        setTimeout(poll,3000);
+      }
+    };
+    poll();
+
   }catch(e){
-    if(e.message==='missing_token'){
-      status.textContent='Add REPLICATE_API_TOKEN in Netlify → Site configuration → Environment variables';
-      prog.style.display='none'; bar.style.width='0%';
-      alert('You need to add your Replicate token:\nNetlify → Site configuration → Environment variables → Add REPLICATE_API_TOKEN=r8_...');
-      return;
-    }
-    // otherwise fallback to mock below
+    // anything unexpected -> sample so the player never breaks
+    console.error('generate failed:',e);
+    const wrap = isT2V ? document.getElementById('preview-t2v-body') : document.querySelector('#panel-i2v .preview-body');
+    const existing = wrap.querySelector('.mock-video');
+    if(existing) existing.remove();
+    const ph = wrap.querySelector('#i2v-placeholder');
+    if(ph) ph.style.display='none';
+    if(isT2V){ const ew=document.querySelector('#preview-t2v-body > div'); if(ew) ew.style.display='none'; }
+    const mock=document.createElement('div');
+    mock.className='mock-video';
+    mock.style.cssText='width:100%;max-width:320px;background:#000;border:1px solid #2a2a2a;border-radius:16px;overflow:hidden;text-align:left';
+    mock.innerHTML='<video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" controls autoplay loop muted style="width:100%;height:180px;object-fit:cover;background:#000"></video><div style="padding:10px"><div style="font-size:11px;color:var(--lime);font-weight:800">SAMPLE • '+model+'</div><div style="font-size:12px;color:#e4e4e7;margin-top:4px">'+prompt.slice(0,80)+'...</div></div>';
+    wrap.appendChild(mock);
   }
-  // Fallback mock (when running locally file:// or no token yet)
-  bar.style.width='30%';
-  status.textContent='Demo mode • Rendering mock (add token for real)...';
-  let w=30;
-  const timer=setInterval(()=>{
-    w+= Math.random()*18+6; if(w>100) w=100;
-    bar.style.width=w+'%';
-    if(w<50) status.textContent='Generating keyframes...';
-    else if(w<80) status.textContent='Rendering motion • Kling 3.0 Turbo • ~8s (demo)';
-    else if(w<100) status.textContent='Upscaling...';
-    else {
-      clearInterval(timer);
-      status.textContent='Done ✓ Demo preview — add token for REAL video';
-      prog.style.display='none'; bar.style.width='0%';
-      const wrap = isT2V ? document.getElementById('preview-t2v-body') : document.querySelector('#panel-i2v .preview-body');
-      const existing = wrap.querySelector('.mock-video');
-      if(existing) existing.remove();
-      const ph = wrap.querySelector('#i2v-placeholder');
-      if(ph) ph.style.display='none';
-      if(isT2V){ const ew=document.querySelector('#preview-t2v-body > div'); if(ew) ew.style.display='none'; }
-      const mock=document.createElement('div');
-      mock.className='mock-video';
-      mock.style.cssText='width:100%;max-width:320px;background:#000;border:1px solid #2a2a2a;border-radius:16px;overflow:hidden;text-align:left';
-      mock.innerHTML='<img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80" onerror="this.src=\'https://picsum.photos/600/340\'" style="width:100%;height:180px;object-fit:cover;display:block"><div style="padding:10px"><div style="font-size:11px;color:var(--lime);font-weight:800">DEMO • '+model+'</div><div style="font-size:12px;color:#e4e4e7;margin-top:4px">'+prompt.slice(0,80)+'...</div><div style="font-size:11px;color:#71717a;margin-top:6px">Netlify Drop = demo only. For REAL video, deploy via Git (I will guide)</div></div>';
-      wrap.appendChild(mock);
-    }
-  },320);
 }
 
-// IMAGE - 100% FREE direct via Pollinations (works even on static Netlify Drop, no backend needed)
+// IMAGE - 100% FREE direct via Pollinations (no backend needed)
 async function generateImage(){
   const prog=document.getElementById('prog-img');
   const bar=document.getElementById('bar-img');
@@ -740,15 +738,12 @@ async function generateImage(){
   out.style.display='none';
   if(placeholder) placeholder.style.display='none';
   bar.style.width='30%';
-  // Direct free generation - no API key, no Netlify Function needed
   bar.style.width='60%';
   const seed=Math.floor(Math.random()*999999);
   const encoded=encodeURIComponent(prompt);
-  // Use pollinations.ai - completely free, no key
   const url=`https://image.pollinations.ai/p/${encoded}?width=1024&height=1024&seed=${seed}&model=flux&nologo=true`;
   status.textContent='Rendering • 2-3 seconds...';
   bar.style.width='90%';
-  // Preload image to show progress correctly
   const img=new Image();
   img.onload=function(){
     prog.style.display='none'; bar.style.width='0%';
@@ -758,7 +753,6 @@ async function generateImage(){
   img.onerror=function(){
     prog.style.display='none'; bar.style.width='0%';
     status.textContent='Error loading image — try a different prompt';
-    // fallback to demo
     out.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80';
     out.style.display='block';
   };
@@ -783,7 +777,6 @@ function sendChat(){
   box.innerHTML += '<div class="msg user">'+escapeHtml(text)+'</div>';
   input.value='';
   box.scrollTop=box.scrollHeight;
-  // bot typing
   const typing=document.createElement('div');
   typing.className='msg bot';
   typing.id='typing';
@@ -821,27 +814,36 @@ function generateScript(){
 `[${style.toUpperCase()}] VIRAL SCRIPT (28s)
 
 HOOK (0-3s) — [BOLD CAPTION + ZOOM]
+
 "Stop doing mornings wrong. This 10-second habit makes you look younger TODAY."
 
 BEAT 1 (4-10s) — [B-ROLL: water + skincare close-up]
+
 VO: "Habit 1: Drink 500ml water BEFORE coffee. De-puffs face, sharpens jawline."
 
 BEAT 2 (11-18s) — [UGC creator to camera]
+
 VO: "Habit 2: 30 seconds cold splash. Tightens skin, boosts glow. No cream needed."
 
 BEAT 3 (19-25s) — [Product / routine montage]
+
 VO: "Habit 3: 2 minutes morning stretch in sunlight. Posture = instant +5 years younger."
 
 CTA (26-28s) — [BIG CAPTION: FOLLOW FOR PART 2]
+
 VO: "Save this, try tomorrow, comment which habit you'll do first."
 
 SHOT LIST:
+
 1. 9:16 close-up, handheld, bathroom light
+
 2. Slow-mo water splash
+
 3. Avatar lip-sync (Aisha / Alex)
+
 4. End card + auto-captions (Hormozi style)
 
-Hashtags: #morningroutine #glowup #faceless`
+Hashtags: #morningroutine #glowup #faceless`;
   }, 800);
 }
 function copyScript(){
@@ -881,7 +883,6 @@ function speakText(){
   u.rate=1; u.pitch=1;
   speechSynthesis.speak(u);
 }
-
 function loadImage(e, id){
   const file=e.target.files[0];
   if(!file) return;
@@ -900,6 +901,7 @@ document.querySelectorAll('img').forEach(img=>{
     }
   });
 });
+
 // model label sync
 document.getElementById('t2v-model').addEventListener('change', e=>{
   document.getElementById('t2v-model-label').textContent=e.target.value;
