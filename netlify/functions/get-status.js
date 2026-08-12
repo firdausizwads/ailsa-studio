@@ -2,8 +2,8 @@
 //  AiLSA Studio — get-status.js  (poll this from your client)
 //  =====================================================================
 //  After generate.js submits a video job, the client polls this function:
-//    GET /.netlify/functions/get-status?model=Kling%203.0%20Turbo&id=<id>
-//  It returns status "succeeded" with a real video URL when the clip is ready.
+//    GET /.netlify/functions/get-status?model=<model>&id=<id>
+//  It returns status "succeeded" with a real video URL when ready.
 // =====================================================================
 
 const PROVIDER_KEYS = {
@@ -30,17 +30,12 @@ export async function handler(event) {
   if (!cfg || !id) return fail("Missing model or id", 400);
 
   try {
-    // ---- fal: read result via queue response endpoint ----
     if (cfg.provider === "fal") {
-      // GET the response_url of the submitted request
       const res = await fetch(`https://queue.fal.run/${cfg.model}/requests/${id}`, {
         headers: { Authorization: `Key ${PROVIDER_KEYS.fal}` },
       });
-      if (res.status === 404) {
-        return ok({ status: "processing", engine: model }); // not done yet
-      }
+      if (res.status === 404) return ok({ status: "processing", engine: model });
       const data = await res.json().catch(() => ({}));
-
       if (data.status === "COMPLETED" || data.video?.url) {
         return ok({ status: "succeeded", engine: model, url: data.video?.url || data.url });
       }
@@ -50,7 +45,6 @@ export async function handler(event) {
       return ok({ status: "processing", engine: model });
     }
 
-    // ---- OpenAI: poll the video job ----
     if (cfg.provider === "openai") {
       const res = await fetch(`https://api.openai.com/v1/videos/${id}`, {
         headers: { Authorization: `Bearer ${PROVIDER_KEYS.openai}` },
@@ -59,9 +53,7 @@ export async function handler(event) {
       if (data.status === "completed" || data.output?.[0]) {
         return ok({ status: "succeeded", engine: model, url: data.output?.[0]?.url });
       }
-      if (data.status === "failed") {
-        return ok({ status: "failed", engine: model, error: data.error?.message });
-      }
+      if (data.status === "failed") return ok({ status: "failed", engine: model, error: data.error?.message });
       return ok({ status: "processing", engine: model });
     }
 
