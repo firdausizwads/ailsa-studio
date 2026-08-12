@@ -8,7 +8,7 @@
 //  Keys come from environment variables (FAL_KEY, OPENAI_API_KEY).
 // =====================================================================
 
-const SAMPLE_FALLBACK = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4";
+const SAMPLE_FALLBACK = "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4";
 
 // ---------- MODEL ROUTING TABLE ----------
 const MODELS = {
