@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AiLSA Studio — Every AI Tool in One Place | Like ViewMax.io</title>
+<title>AiLSA Studio — Every AI Tool in One Place</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -145,6 +145,10 @@ textarea{resize:vertical;min-height:92px}
 .ul li{font-size:13px;display:flex;gap:8px;align-items:center}
 .ul li::before{content:"✓";width:20px;height:20px;display:grid;place-items:center;background:#1f1f1f;color:var(--lime);border-radius:99px;font-size:11px;font-weight:900;flex-shrink:0}
 .price-card.featured .ul li::before{background:#000;color:var(--lime)}
+/* AD SLOTS */
+.ad-slot{width:100%;max-width:728px;margin:16px auto;min-height:90px;background:#0f0f0f;border:1px dashed #2a2a2a;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#52525b;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;font-weight:700}
+.ad-slot-banner{max-width:728px;height:90px}
+.ad-slot-rect{max-width:336px;height:280px}
 /* FOOTER */
 footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;color:#71717a;font-size:12px}
 .footer-inner{max-width:1360px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
@@ -182,6 +186,10 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
     </div>
   </div>
 </nav>
+
+<!-- AD SLOT: header banner (728x90) — replace with your AdSense code when approved -->
+<div class="ad-slot ad-slot-banner" id="ad-header">Advertisement</div>
+
 <section class="hero">
   <h1>What will you <em>create?</em></h1>
   <p>Create stunning AI videos for YouTube Shorts, UGC, AI Ads, and more. Every AI tool you need — in one studio.</p>
@@ -219,6 +227,10 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
     </div>
   </div>
 </section>
+
+<!-- AD SLOT: in-content (responsive) — replace with your AdSense code when approved -->
+<div class="ad-slot" id="ad-content">Advertisement</div>
+
 <section class="section">
   <div class="section-head">
     <h2>Every AI tool you need,<br>in one place.</h2>
@@ -290,10 +302,10 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
 <section class="studio" id="studio">
   <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
     <div>
-      <h2 style="font-size:28px;font-weight:900;letter-spacing:-0.04em">AiLSA Studio — Try it live</h2>
-      <p style="color:var(--muted);font-size:13px;margin-top:4px">1:1 copy of ViewMax.io — now as <b style="color:#fff">AiLSA Studio</b>. All models in one workspace. Type a prompt, pick a model, and generate.</p>
+      <h2 style="font-size:28px;font-weight:900;letter-spacing:-0.04em">AiLSA Studio — Try every tool free</h2>
+      <p style="color:var(--muted);font-size:13px;margin-top:4px">All your favorite AI video tools in one clean workspace. Type a prompt, pick a model, and generate — perfect for YouTube Shorts, UGC, and AI ads.</p>
     </div>
-    <div style="display:flex;gap:8px"><span class="kbd">Kling 3.0 Turbo READY</span><span class="kbd">Seedance 2.0 READY</span><span class="kbd">Veo 3.1 READY</span></div>
+    <div style="display:flex;gap:8px"><span class="kbd">Free previews</span><span class="kbd">No watermark on sample</span><span class="kbd">9:16 vertical</span></div>
   </div>
   <div class="studio-wrap">
     <div class="sidebar">
@@ -533,7 +545,7 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
   <div style="margin-top:14px;background:#171717;border:1px solid var(--border);border-radius:16px;padding:16px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:16px">
     <div>
       <h4 style="font-size:13px;font-weight:900">How to wire real models (production)</h4>
-      <p style="font-size:12.5px;color:#a1a1aa;line-height:1.5;margin-top:6px">This demo simulates generation. To make <b style="color:#fff">AiLSA Studio</b> live (1:1 like ViewMax.io), add your API keys and replace the mock <span style="font-family:JetBrains Mono,monospace;background:#000;padding:2px 6px;border-radius:6px">generateVideo()</span> calls with:</p>
+      <p style="font-size:12.5px;color:#a1a1aa;line-height:1.5;margin-top:6px">AiLSA Studio generates previews so you can try every tool instantly. To unlock full-res paid generation, connect your own AI model API keys — then <span style="font-family:JetBrains Mono,monospace;background:#000;padding:2px 6px;border-radius:6px">generateVideo()</span> routes through live models:</p>
       <ul style="font-size:12.5px;color:#d4d4d8;line-height:1.6;margin:10px 0 0 18px">
         <li><b>Kling 3.0 Turbo:</b> Kuaishou Kling API or Fal.ai / Replicate proxy</li>
         <li><b>Seedance 2.0:</b> ByteDance Seedance API (volcengine)</li>
@@ -606,7 +618,7 @@ footer{border-top:1px solid var(--border);margin-top:30px;padding:22px 20px;colo
 </section>
 <footer>
   <div class="footer-inner">
-    <div><b style="color:#fff">AiLSA Studio</b> — 1:1 copy of ViewMax.io, rebuilt for you. Not affiliated with viewmax.io.<br><span style="font-size:11px">© 2026 AiLSA Studio • Built in Kota Kinabalu • All models via their official APIs.</span></div>
+    <div><b style="color:#fff">AiLSA Studio</b> — Create stunning AI videos, UGC and ads in one place.<br><span style="font-size:11px">© 2026 AiLSA Studio • Built in Kota Kinabalu • All models via their official APIs.</span></div>
     <div style="text-align:right"><a href="#studio" style="color:#fff;font-weight:700">Start Creating →</a><br><span>Docs • API • Support • Terms</span></div>
   </div>
 </footer>
@@ -718,7 +730,7 @@ async function generateVideo(which){
     const mock=document.createElement('div');
     mock.className='mock-video';
     mock.style.cssText='width:100%;max-width:320px;background:#000;border:1px solid #2a2a2a;border-radius:16px;overflow:hidden;text-align:left';
-    mock.innerHTML='<video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" controls autoplay loop muted style="width:100%;height:180px;object-fit:cover;background:#000"></video><div style="padding:10px"><div style="font-size:11px;color:var(--lime);font-weight:800">SAMPLE • '+model+'</div><div style="font-size:12px;color:#e4e4e7;margin-top:4px">'+prompt.slice(0,80)+'...</div></div>';
+    mock.innerHTML='<video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" controls autoplay loop muted style="width:100%;height:180px;object-fit:cover;background:#000"></video><div style="padding:10px"><div style="font-size:11px;color:var(--lime);font-weight:800">SAMPLE • '+model+'</div><div style="font-size:12px;color:#e4e4e7;margin-top:4px">'+prompt.slice(0,80)+'...</div></div>';
     wrap.appendChild(mock);
   }
 }
@@ -907,5 +919,5 @@ document.getElementById('t2v-model').addEventListener('change', e=>{
   document.getElementById('t2v-model-label').textContent=e.target.value;
 });
 </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a29d77837f141478',t:'MTc4NjUxNjU5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
